@@ -5,6 +5,19 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureTest", "AzureTest.csproj", "{B86C6018-5DB4-4415-8F63-524A7871A68B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureTest.Web", "..\AzureTest.Web\AzureTest.Web.csproj", "{EB6D0AFD-651C-4A15-8052-71C3D564576D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{3EEF4124-7CEA-46BC-B490-118C1C706E1E}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{58F819C9-11E9-4D4B-9F20-407A7225D5EB}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\AzureTestWeb-WAWS-dev.json = PublishScripts\Configurations\AzureTestWeb-WAWS-dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +28,15 @@ Global
 		{B86C6018-5DB4-4415-8F63-524A7871A68B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B86C6018-5DB4-4415-8F63-524A7871A68B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B86C6018-5DB4-4415-8F63-524A7871A68B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB6D0AFD-651C-4A15-8052-71C3D564576D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB6D0AFD-651C-4A15-8052-71C3D564576D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB6D0AFD-651C-4A15-8052-71C3D564576D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB6D0AFD-651C-4A15-8052-71C3D564576D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{58F819C9-11E9-4D4B-9F20-407A7225D5EB} = {3EEF4124-7CEA-46BC-B490-118C1C706E1E}
 	EndGlobalSection
 EndGlobal
